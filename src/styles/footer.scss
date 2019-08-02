@@ -1,0 +1,151 @@
+.footer {
+  background-color: #161616;
+
+  &__title {
+    padding-top: 100px;
+    padding-bottom: 65px;
+    font-family: DIN Pro;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+
+  &__form {
+    max-width: 760px;
+    margin: 0 auto;
+
+    .form__button {
+      margin-bottom: 120px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+      border-radius: 111px;
+      font-family: Gilroy;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #F47821;
+      border: 0;
+      padding: 20px 0;
+      width: 100%;
+
+      @include xs {
+      }
+
+      @include sm {
+      }
+    }
+
+    .item {
+      display: flex;
+      padding-bottom: 52px;
+
+      &__number {
+        width: 64px;
+        height: 64px;
+        border: 1px solid  #757575;
+        border-radius: 32px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #F47821;
+        margin: 0 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include xs {
+          width: 42px;
+          height: 42px;
+          margin: 0 14px;
+        }
+  
+        @include sm {
+          width: 52px;
+          height: 52px;
+          margin: 0 14px;
+        }
+      }
+
+      &__number--empty {
+        border: none;
+      }
+
+      &__box {
+        flex: 1;
+        padding-right: 28px;
+
+        .item__label {
+          display: block;
+          font-family: DIN Pro;
+          font-size: 16px;
+          line-height: 25px;
+          letter-spacing: -0.01em;
+          color: #FFFFFF;
+          padding: 20px 0;
+
+          @include xs {
+            padding: 10px 0;
+          }
+          @include xs {
+            padding: 15px 0;
+          }
+        }
+
+        .item__input {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 35px;
+          letter-spacing: -0.01em;
+          color: #FFFFFF;
+          opacity: 0.3;
+          border: none;
+          border-bottom: 1px solid white;
+          background-color: #161616;
+          padding-bottom: 15px;
+          width: 100%;
+
+          @include xs {
+            font-size: 20px;
+          }
+
+          @include sm {
+
+          }
+        }
+
+        .item__textarea {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 35px;
+          letter-spacing: -0.01em;
+          color: #FFFFFF;
+          opacity: 0.3;
+          border: none;
+          border-bottom: 1px solid white;
+          background-color: #161616;
+          padding-bottom: 12px;
+          overflow-y: hidden;
+          width: 100%;
+
+          @include xs {
+          }
+
+          @include sm {
+
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,16 @@
+include formInput.pug
+include formTextarea.pug
+
+.footer
+  h1.footer__title
+    | Теперь расскажите о себе
+  form(action="#" method="post").footer__form
+    +formInput('1', 'Фамилия и имя', 'Сидоров Александр', 'text')
+    +formInput('2', 'Электронная почти', 'Sidorov@yandex.ru', 'email')
+    +formInput('3', 'Телефон', '+7 (999)-328-14-20', 'number')
+    +formTextarea('4', 'Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?', 'Свой проект по созданию универсальной инфраструктуры строительства','text')
+  
+    .footer__item.item
+      .item__number.item__number--empty
+      .item__box
+        button.form__button Отправить  

@@ -1,0 +1,45 @@
+.text {
+  padding: 57px 334px 100px 334px;
+
+  @include xs {
+    padding: 57px 30px 100px 30px;
+  }
+
+  @include sm {
+  padding: 57px 84px 100px 84px;
+  }
+
+  @include md {
+    padding: 57px 134px 100px 134px;
+  }
+
+  @include lg {
+    padding: 57px 234px 100px 234px;
+  }
+
+  &__title {  
+    font-weight: normal;
+    padding-bottom: 23px;
+    font-family: DIN Pro;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    color: #222222;
+  }
+
+  &__paragraph {
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: #4E4D53;
+
+      &:first-child {
+        padding-bottom: 28px;
+      }
+    }
+  }
+}

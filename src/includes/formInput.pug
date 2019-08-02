@@ -1,0 +1,6 @@
+mixin formInput(num, label, placeholder, type)
+  .footer__item.item
+    .item__number= num
+    .item__box
+      label.item__label(for="")= label
+      input.item__input(type=type, placeholder= placeholder)

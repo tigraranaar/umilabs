@@ -1,0 +1,43 @@
+.section {
+  background: #F7F5FA url(../images/bg.png) 100% 100% no-repeat;
+  background-position: top;
+  padding-bottom: 80px;
+ 
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &:first-child {
+      padding-top: 501px;
+    }
+  }
+
+  &__item {
+    width: 486px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    padding: 50px 61px 70px 60px;
+
+    h5 {
+      text-align: left;
+      font-family: DIN Pro;
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #F47821;
+    }
+
+    p {
+      padding-top: 12px;
+      font-family: DIN Pro;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: -0.03em;
+      color: #222222;
+    }
+  }
+}

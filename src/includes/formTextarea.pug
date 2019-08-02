@@ -1,0 +1,6 @@
+mixin formTextarea(num, label, place, type)
+  .footer__item.item
+    .item__number= num
+    .item__box
+      label.item__label(for="")= label
+      textarea.item__textarea#item__textarea(type=type, name="", cols="", rows="")= place

@@ -1,0 +1,10 @@
+mixin option(title, text)
+  .option      
+      .option__ico
+        include ../images/ico.svg
+      h3.option__title= title
+      .option__line
+        include ../images/line.svg
+      p.option__text= text
+
+      block
